@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Penguin Fashion</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="bg-white text-gray-700">
+
+  <!-- Header -->
+  <header class="bg-[#FFFBF0] relative overflow-hidden">
+    <!-- optional decorative image -->
+    <!-- <img src="./assets/icons/banner.png" alt="" class="absolute top-0 left-1/2 -translate-x-1/2 z-0"> -->
+
+    <!-- Navbar -->
+    <nav class="container mx-auto px-4 py-6 flex items-center justify-between relative z-10">
+      <img
+        src="./assets/icons/logo.png"
+        alt="Penguin Fashion Logo"
+        class="w-[225px] h-[31px] object-contain"
+      />
+
+      <ul class="hidden md:flex items-center gap-8 font-semibold text-[#3C3C3C]">
+        <li><a href="#" class="hover:text-[#A4BC46] transition">Home</a></li>
+        <li><a href="#product" class="hover:text-[#A4BC46] transition">Product</a></li>
+        <li><a href="#about" class="hover:text-[#A4BC46] transition">About us</a></li>
+        <li><a href="#contact" class="hover:text-[#A4BC46] transition">Contact us</a></li>
+      </ul>
+
+      <span class="md:hidden text-2xl text-[#3C3C3C]">
+        <i class="fa-solid fa-bars"></i>
+      </span>
+    </nav>
+
+    <!-- Hero -->
+    <section class="container mx-auto px-4 min-h-[75vh] grid md:grid-cols-2 items-center gap-10 relative z-10">
+      <div class="hidden md:block">
+        <h1 class="text-[56px] lg:text-[80px] leading-[0.9]">
+          <span class="block text-[#FABE4C]">BE THE PENGUINS</span>
+          <span class="block text-[#363958]">OF WINTER</span>
+        </h1>
+
+        <p class="mt-4 max-w-xl text-base text-[#3E3E3E]">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+        </p>
+
+        <button class="buy-btn mt-6">
+          <i class="fa-solid fa-cart-shopping mr-2"></i>
+          BUY NOW
+        </button>
+      </div>
+
+      <div class="flex justify-center">
+        <img
+          src="./assets/images/model.png"
+          alt="Winter Model"
+          class="w-full max-w-[500px] object-contain"
+        />
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <!-- Women Jacket Section -->
+    <section id="product" class="container mx-auto px-4 my-16">
+      <h2 class="section-title mb-10">WOMAN JACKET</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+        <!-- Card 1 -->
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="./assets/images/jacket-1.png" alt="Yellow Coat Jacket" class="product-image" />
+          </div>
+          <h4 class="product-title">Yellow Coat Jacket</h4>
+          <p class="product-desc">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+
+          <div class="flex items-center justify-between gap-4 mt-6">
+            <h4 class="price">$234</h4>
+            <button class="buy-btn">
+              <i class="fa-solid fa-cart-shopping mr-2"></i>
+              BUY NOW
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="./assets/images/jacket-2.png" alt="Ladies Jacket" class="product-image" />
+          </div>
+          <h4 class="product-title">Ladies Jacket</h4>
+          <p class="product-desc">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+
+          <div class="flex items-center justify-between gap-4 mt-6">
+            <h4 class="price">$234</h4>
+            <button class="buy-btn">
+              <i class="fa-solid fa-cart-shopping mr-2"></i>
+              BUY NOW
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="./assets/images/jacket-3.png" alt="Woman Leather Jacket" class="product-image" />
+          </div>
+          <h4 class="product-title">Woman Leather Jacket</h4>
+          <p class="product-desc">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+
+          <div class="flex items-center justify-between gap-4 mt-6">
+            <h4 class="price">$234</h4>
+            <button class="buy-btn">
+              <i class="fa-solid fa-cart-shopping mr-2"></i>
+              BUY NOW
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Men Jacket Section -->
+    <section class="container mx-auto px-4 my-16">
+      <h2 class="section-title mb-10">MAN JACKET</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+        <!-- Card 1 -->
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="./assets/images/jacket-4.png" alt="Snowboard Jacket Mens" class="product-image" />
+          </div>
+          <h4 class="product-title">Snowboard Jacket Mens</h4>
+          <p class="product-desc">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+
+          <div class="flex items-center justify-between gap-4 mt-6">
+            <h4 class="price">$234</h4>
+            <button class="buy-btn">
+              <i class="fa-solid fa-cart-shopping mr-2"></i>
+              BUY NOW
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="./assets/images/jacket-5.png" alt="Man Leather Jackets" class="product-image" />
+          </div>
+          <h4 class="product-title">Man Leather Jackets</h4>
+          <p class="product-desc">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+
+          <div class="flex items-center justify-between gap-4 mt-6">
+            <h4 class="price">$234</h4>
+            <button class="buy-btn">
+              <i class="fa-solid fa-cart-shopping mr-2"></i>
+              BUY NOW
+            </button>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="product-card">
+          <div class="product-image-wrap">
+            <img src="./assets/images/jacket-6.png" alt="Man Casual Jackets" class="product-image" />
+          </div>
+          <h4 class="product-title">Man Casual Jackets</h4>
+          <p class="product-desc">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          </p>
+
+          <div class="flex items-center justify-between gap-4 mt-6">
+            <h4 class="price">$234</h4>
+            <button class="buy-btn">
+              <i class="fa-solid fa-cart-shopping mr-2"></i>
+              BUY NOW
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Facility Section -->
+    <section id="about" class="container mx-auto px-4 my-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <!-- Left -->
+        <div class="order-2 md:order-1 space-y-6">
+          <div class="facility-card">
+            <img src="./assets/icons/house.png" alt="House Icon" class="w-[78px] h-[82px] object-contain" />
+            <div>
+              <h4 class="facility-title">Find the Perfect Fit</h4>
+              <p class="facility-desc">
+                Everybody is different, which is why we offer styles for every body.
+              </p>
+            </div>
+          </div>
+
+          <div class="facility-card">
+            <img src="./assets/icons/box.png" alt="Box Icon" class="w-[78px] h-[82px] object-contain" />
+            <div>
+              <h4 class="facility-title">Free Exchanges</h4>
+              <p class="facility-desc">
+                One of the many reasons you can shop with peace of mind.
+              </p>
+            </div>
+          </div>
+
+          <div class="facility-card">
+            <img src="./assets/icons/question.png" alt="Question Icon" class="w-[78px] h-[82px] object-contain" />
+            <div>
+              <h4 class="facility-title">Contact Our Seller</h4>
+              <p class="facility-desc">
+                They are here to help you. That's quite literally what we pay them for.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right -->
+        <div class="order-1 md:order-2 flex justify-center">
+          <img
+            src="./assets/images/shopping.png"
+            alt="Shopping"
+            class="w-full max-w-[600px] object-contain"
+          />
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
