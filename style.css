@@ -1,10 +1,17 @@
 * {
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero-title,
+.section-title {
   font-family: 'Bebas Neue', sans-serif;
 }
 
@@ -14,6 +21,11 @@ html {
 
 body {
   overflow-x: hidden;
+  background: #ffffff;
+}
+
+.hero-title {
+  font-size: 80px;
 }
 
 .buy-btn {
@@ -30,6 +42,7 @@ body {
   justify-content: center;
   cursor: pointer;
   transition: 0.3s ease;
+  flex-shrink: 0;
 }
 
 .buy-btn:hover {
@@ -39,7 +52,7 @@ body {
 
 .section-title {
   font-size: 48px;
-  line-height: 1.2;
+  line-height: 1.1;
   color: #363958;
 }
 
@@ -112,22 +125,73 @@ body {
 }
 
 @media (max-width: 767px) {
+  .nav-logo {
+    width: 165px;
+  }
+
+  .hero-title {
+    font-size: 54px;
+    line-height: 0.92;
+  }
+
+  .hero-model {
+    max-width: 260px;
+  }
+
   .section-title {
-    font-size: 38px;
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 24px;
   }
 
   .buy-btn {
-    width: 150px;
-    height: 52px;
-    font-size: 14px;
+    width: 145px;
+    height: 50px;
+    font-size: 13px;
+    border-radius: 8px;
+  }
+
+  .product-card {
+    padding: 12px;
+    border-radius: 16px;
+  }
+
+  .product-image-wrap {
+    padding: 14px 10px;
+    border-radius: 14px;
   }
 
   .product-image {
-    height: 260px;
+    height: 220px;
+  }
+
+  .product-title {
+    font-size: 20px;
+    margin-top: 12px;
+  }
+
+  .product-desc {
+    font-size: 14px;
+    line-height: 1.45;
+    margin-top: 8px;
+  }
+
+  .price {
+    font-size: 30px;
   }
 
   .facility-card {
     flex-direction: column;
     text-align: center;
+    padding: 18px;
+  }
+
+  .facility-title {
+    font-size: 22px;
+  }
+
+  .facility-desc {
+    font-size: 14px;
+    line-height: 1.5;
   }
 }
